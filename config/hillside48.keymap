@@ -92,7 +92,7 @@
 &kp ESC       &kp  F1       &kp  F2       &kp  F3    &kp  F4   &kp  SLCK                                                          &kp  PAUSE_BREAK &kp  PG_UP    &kp  UP       &kp  PG_DN    &kp  PSCRN    &trans
 &trans        &kp  F5       &kp  F6       &kp  F7    &kp  F8   &trans                                                                &kp  HOME     &kp  LEFT     &kp  DOWN     &kp  RIGHT    &kp  INS      &trans
 &trans        &kp  F9       &kp  F10      &kp  F11   &kp  F12  &trans    &mo  ADJ_L                                          &mo  ADJ_L  &kp  END      &trans        &trans        &trans        &kp  DEL      &trans
-                            &trans                   &kp CAPS  &trans    &trans     &trans                     &trans    &kp C_MUTE    &kp C_VOL_UP  &kp C_VOL_DN                 &kp C_PP     
+                            &trans                   &kp CAPS  &trans    &trans     &trans                     &trans    &kp C_MUTE    &kp C_VOL_DN  &kp C_VOL_UP                 &kp C_PP     
                         >;
 			
                         sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
