@@ -104,13 +104,13 @@
  * | `     |   1   |   2   |   3   |   4   |   5   |-----------------------------------|   6   |   7   |   8   |   9   |   0   |       |
  * |       |  -    |  =    |  \    |       |  /    |-----------------------------------|  *    |   4   |   5   |   6   |   -   |       |
  * |       |  [    |  ]    |  ;    |       | NUMLK | ADJ_L |-------------------|       |  .    |   1   |   2   |   3   |   +   |       |
- * ----------------|       |-------|       |       |       |       |---| ENTER |       |       |   0   |-------|   .   |----------------
+ * ----------------|       |-------|       |       |       |       |---|       |       | ENTER |   0   |-------|   .   |----------------
  */
                         bindings = <
 &kp  GRAVE    &kp  N1       &kp  N2       &kp  N3       &kp  N4       &kp  N5                                                                        &kp   N6        &kp   N7      &kp   N8      &kp   N9      &kp  N0       &trans
 &trans        &kp  MINUS    &kp  EQUAL    &kp BSLH      &kp  F4       &kp  F5                                                                        &kp KP_MULTIPLY &kp   N4      &kp   N5      &kp   N6      &kp  KP_MINUS &trans
-&trans        &kp  LBKT     &kp  RBKT     &kp  SEMI     &trans        &kp  KP_NUM   &mo ADJ_L                                          &kp  C_MUTE   &kp  KP_DOT     &kp   N1      &kp   N2      &kp   N3      &kp  KP_PLUS  &trans
-                            &trans                      &trans        &trans        &trans        &trans           &kp KP_ENTER        &trans        &trans          &kp   N0                       &kp  KP_DOT   
+&trans        &kp  LBKT     &kp  RBKT     &kp  SEMI     &trans        &kp  KP_NUM   &mo ADJ_L                                          &kp  C_MUTE   &kp KP_DOT      &kp   N1      &kp   N2      &kp   N3      &kp  KP_PLUS  &trans
+                            &trans                      &trans        &trans        &trans        &trans                &trans         &trans        &kp KP_ENTER    &kp   N0                    &kp  KP_DOT   
                         >;
 			
                         sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -122,13 +122,13 @@
  * |       | QWERTY| DVORAK| COLEMK| EP_OFF| EP_ON |-----------------------------------|       |   7   |   8   |   9   |       |       |
  * |       | BT 0  | BT 1  | BT 2  | BT 3  | BT 4  |-----------------------------------|   *   |   4   |   5   |   6   |   -   |       |
  * | BOOTL | RESET |       |OUT_USB|OUT_BLE|       |BT CLR |-------------------|       |   /   |   1   |   2   |   3   |   +   |       |
- * ----------------|       |-------|       |       |       |       |---|       | ENTER |       |   0   |-------|   .   |----------------
+ * ----------------|       |-------|       |       |       |       |---|       |       | ENTER |   0   |-------|   .   |----------------
  */
                         bindings = <
 &none         &to  QWERTY_L &to  DVORAK_L &to  COLEMK_L &ext_power EP_OFF        &ext_power EP_ON                                                       &none             &kp KP_N7          &kp KP_N8        &kp KP_N9       &kp KP_MINUS    &none
 &none         &bt  BT_SEL 0 &bt  BT_SEL 1 &bt  BT_SEL 2 &bt  BT_SEL 3 &bt  BT_SEL 4                                                                     &kp KP_MULTIPLY   &kp KP_N4          &kp KP_N5        &kp KP_N6       &kp KP_PLUS     &none
 &bootloader   &sys_reset    &none         &out OUT_USB  &out OUT_BLE  &none         &bt BT_CLR                                         &kp  KP_NUM      &kp KP_DIVIDE     &kp KP_N1          &kp KP_N2        &kp KP_N3       &none           &none 
-                            &trans                      &trans        &trans        &trans        &trans                 &kp KP_ENTER  &trans           &trans            &kp KP_N0                           &kp  KP_DOT   
+                            &trans                      &trans        &trans        &trans        &trans                   &trans      &trans           &kp KP_ENTER      &kp KP_N0                           &kp  KP_DOT   
                         >;
 			
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
