@@ -32,13 +32,13 @@
  * | TAB   |   Q   |   W   |   E   |   R   |   T   |-----------------------------------|   Y   |   U   |   I   |   O   |   P   | BKSPC |
  * | Sym   |   A   |   S   |   D   |   F   |   G   |-----------------------------------|   H   |   J   |   K   |   L   |   ;   | Num   |
  * | SHIFT |   Z   |   X   |   C   |   V   |   B   | LALT  |-------------------| RALT  |   N   |   M   |   ,   |   .   |   /   | SHIFT |
- * ----------------| CTRL  |-------|  GUI  |  Sym  | SPACE |  DEL  |---| ENTER | SPACE | Num   |  APP  |-------|   \   |----------------
+ * ----------------| CTRL  |-------|  GUI  |  DEL  | Sym   | SPACE |---| SPACE | Num   | ENTER |  APP  |-------|   \   |----------------
  */
                         bindings = <
 &kp  TAB      &kp  Q        &kp  W        &kp  E        &kp  R        &kp  T                                                                         &kp  Y        &kp  U        &kp  I        &kp  O        &kp  P        &kp  BSPC
 &mo  SYM_L    &kp  A        &kp  S        &kp  D        &kp  F        &kp  G                                                                         &kp  H        &kp  J        &kp  K        &kp  L        &kp  SEMI     &mo  NUM_L 
-&kp  LSHFT    &kp  Z        &kp  X        &kp  C        &kp  V        &kp  B        &kp  LALT                                         &kp  RALT     &kp  N        &kp  M        &kp  COMMA    &kp  DOT      &kp  FSLH    &kp  RSHFT
-                            &kp  LCTRL                  &kp  LGUI     &mo  SYM_L    &kp  SPACE    &kp  DEL             &kp  ENTER    &kp  SPACE    &mo  NUM_L     &kp  K_APP                   &kp  BSLH   
+&kp  LSHFT    &kp  Z        &kp  X        &kp  C        &kp  V        &kp  B        &kp  LALT                                         &kp  RALT     &kp  N         &kp  M        &kp  COMMA    &kp  DOT      &kp  FSLH    &kp  RSHFT
+                            &kp  LCTRL                  &kp  LGUI     &kp  DEL      &mo  SYM_L    &kp  SPACE            &kp  SPACE    &mo  NUM_L    &kp  ENTER     &kp  K_APP                   &kp  BSLH   
                         >;
 			
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
