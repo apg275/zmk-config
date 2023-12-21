@@ -132,13 +132,13 @@
     &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                                            &kp KP_DIVIDE &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_PLUS &tog ADJ_L
 //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┬──────────╮                         ╭──────────┬──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤
 //| BOOT LOAD│ RESET    │          │ USB OUT  │ BLE OUT  │USB BLE TG│          │                         │          │ NUM .    │  1 !     │  2 @     │  3 #     │ NUM +    │          |
-   &bootloader &sys_reset  &none  &out OUT_USB &out OUT_BLE &out OUT_TOG &none                             &none     &kp KP_DOT  &kp N1     &kp N2     &kp N3    &kp KP_PLUS  &trans
+   &bootloader &sys_reset  &none  &out OUT_USB &out OUT_BLE &out OUT_TOG &none                             &none     &kp KP_NUM  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT  &none 
 //╰──────────┴──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────╮   ╭──────────┬──────────┼──────────┼──────────┼──────────┼──────────┴──────────┴──────────╯
 //                      |          |          |          |          |          |          |   |          | NUM ENTER| ADJUST TG|  NUM 0   |          |          |                  
                           &none                 &trans     &trans     &trans     &none          &none     &kp KP_ENTER &tog ADJ_L &kp KP_N0             &none 
 //                      ╰──────────╯          ╰──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────╯          ╰──────────╯
                         >;
-                        			
+
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
                 };
         };
