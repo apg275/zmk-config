@@ -38,12 +38,12 @@
 //| L SHIFT  │  Z       │  X       │  C       │  V       │  B       │          │                         │          │  N       │  M       │ , <      │ . >      │  ? /     │ R SHIFT  |
     &kp LSHFT  &kp Z      &kp X      &kp C      &kp V      &kp B      &none                                &none      &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH   &kp RSHFT
 //╰──────────┴──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────╮   ╭──────────┬──────────┼──────────┼──────────┼──────────┼──────────┴──────────┴──────────╯
-//                      |          |          | L CTRL   | LOWER    | SPACE    |          |   |          | ENTER    | RAISE    | WIN      |          |          |                  
-                          &none                 &kp LCTRL  &mo SYM_L  &kp SPACE  &none          &none      &kp ENTER &mo  NUM_L  &kp LGUI              &none 
+//                      |          |          | L CTRL   | LOWER    | SPACE    | SPACE    |   | ENTER    | ENTER    | RAISE    | WIN      |          |          |                  
+                          &none                 &kp LCTRL  &mo SYM_L  &kp SPACE  &kp SPACE      &kp ENTER  &kp ENTER &mo  NUM_L  &kp LGUI              &none 
 //                      ╰──────────╯          ╰──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────╯          ╰──────────╯
                         >;
 			
-                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+                        sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
                 };
 		
                 dvorak_layer {
@@ -99,7 +99,7 @@
 //                      ╰──────────╯          ╰──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────╯          ╰──────────╯
                         >;
 
-                        sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
+                        sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
                 };
 		
                 num_layer {
@@ -119,7 +119,7 @@
 //                      ╰──────────╯          ╰──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────╯          ╰──────────╯
                         >;
 			
-                        sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
+                        sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
                 };
 		
                 adj_layer {
@@ -139,7 +139,7 @@
 //                      ╰──────────╯          ╰──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────╯          ╰──────────╯
                         >;
 
-                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+                        sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
                 };
         };
 };
